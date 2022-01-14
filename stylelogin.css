@@ -16,6 +16,22 @@ header{
     align-items: center;
 }
 
+img{
+    width: 9%;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+ul{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    margin: 0px 50px;
+}
+
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -117,3 +133,5 @@ option{
         text-align: center;
         padding: 3%;
 }
+
+
