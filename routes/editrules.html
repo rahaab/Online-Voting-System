@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelogin.css">
+    <title>Online Voting System - Edit Rules</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@600&display=swap" rel="stylesheet">
+    <script>
+        function saveEdits() {
+
+            //get the editable element
+            var editElem = document.getElementById("edit");
+
+            //get the edited element content
+            var userVersion = editElem.innerHTML;
+
+            //save the content to local storage
+            localStorage.userEdits = userVersion;
+
+            //write a confirmation to the user
+            document.getElementById("update").innerHTML = "Edits saved!";
+
+        }
+
+        function checkEdits() {
+
+            //find out if the user has previously saved edits
+            if (localStorage.userEdits != null)
+                document.getElementById("edit").innerHTML = localStorage.userEdits;
+        }
+    </script>
+</head>
+
+<body onload="checkEdits()">
+    <header>
+        <nav class="logreg">
+            <img src="logonew.png" alt="">
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <h1>Online Voting System</h1>
+        <div class="rules" id="edit" contenteditable="true">
+            <h2>Rules</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aspernatur accusamus maiores nihil modi!
+                Quam ex optio, vel magnam, nostrum, iusto similique eaque modi facilis cupiditate architecto id delectus
+                odit?</p>
+            <ol>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                    laborum excepturi, a tempora ratione non vel modi.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                    laborum excepturi, a tempora ratione non vel modi.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                    laborum excepturi, a tempora ratione non vel modi.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                    laborum excepturi, a tempora ratione non vel modi.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                    laborum excepturi, a tempora ratione non vel modi.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                    laborum excepturi, a tempora ratione non vel modi.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                    laborum excepturi, a tempora ratione non vel modi.</li>
+            </ol>
+        </div>
+        <center><input class="editbtn" type="button" value="Save" onclick="saveEdits()" /></center>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

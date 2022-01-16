@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karma', serif;
+    color: white;
+}
+
+header{
+    background: #000;
+    color: white;
+}
+
+.logo{
+    width: 9%;
+}
+
+nav{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    align-content: center;
+    margin: 0px 50px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 36px;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    padding: 2%;
+}
+
+body{
+    background-image: radial-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(box.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.dp{
+    height: 150px;
+    width: 150px;
+    min-width: 100px;
+}
+
+.candidatedp{
+    height: 100px;
+    min-width: 100px;
+    width: 100px;
+    float: right;
+    margin-top: 1%;
+}
+
+.profile{
+    /* background-color: gray; */
+    /* height: 300px; */
+    /* min-width: 300px;
+    width: 30%; */
+    /* padding: 10px; */
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background: black;
+    padding: 2%;
+    border-style: inset;
+    /* margin: 0vh 39%; */
+    /* margin: 2%; */
+    font-size: 18px;
+    /* display: inline-block; */
+}
+
+.box{
+    /* background: gray; */
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1%;
+    
+}
+.candidates{
+    /* background-color: gray; */
+    /* height: 300px; */
+    /* min-width: 300px;
+    width: 70%; */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* background: black; */
+    padding: 2%;
+    border-style: inset;
+    /* margin: 0vh 39%; */
+    /* margin: 2% auto; */
+    font-size: 18px;
+    overflow-y: scroll;
+    margin: 1%;
+    /* display: inline-block; */
+}
+
+.slots{
+    min-height: 120px;
+}
+
+h2{
+    text-align: center;
+}
+
+b{
+    /* color: gray; */
+    color: #0addff;
+    /* color: rgb(184, 235, 255); */
+}
+
+.votebtn{
+    width: 10%;
+    min-width: 64px;
+    padding: 1%;
+    margin: 3% 0%;
+    /* background: rgb(255, 123, 0); */
+    background: grey;
+    /* border-radius: 20px; */
+    /* border-style: inset; */
+}
+
+.about{
+    margin-top: 30vh;
+    background: #000;
+    padding: 2%;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    border-style: inset none none none;
+}
+
+.buttons{
+    /* background: #000; */
+    display: flex;
+    padding: 1%;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+}
+
+.adminbtn{
+    width: 10%;
+    min-width: 64px;
+    padding: 1%;
+    /* margin: 3% 0%; */
+    /* background: rgb(255, 123, 0); */
+    background: grey;
+    /* border-radius: 20px; */
+    /* border-style: inset; */
+}

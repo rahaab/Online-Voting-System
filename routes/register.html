@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelogin.css">
+    <title>Online Voting System - Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="logreg">
+            <img src="logonew.png" alt="">
+            <ul>
+                <li><a href="#about">About us</a></li>
+                <li><a href="rules.html" target="_blank">Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <h1>Online Voting System</h1>
+        <!-- <hr> -->
+
+        <div class="logregform">
+            <h2>Register</h2>
+            <form action="../api/register.php" method="post" enctype="multipart/form-data">
+                <!-- <label for="role">Select your role:</label>
+                <select class="roleselect" name="role" id="role">
+                    <option value="voter">Voter</option>
+                    <option value="candidate">Candidate</option>
+                </select> -->
+                <input type="text" id="fname" placeholder="First Name" name="fname" pattern="[A-Z]{1}[a-z]{1,}"
+                    required>
+                <input type="text" id="lname" placeholder="Last Name" name="lname" pattern="[A-Z]{1}[a-z]{1,}" required>
+                <input type="tel" id="mobno" placeholder="Mobile Number" pattern="03[0-6]{1}[0-9]{1}-[0-9]{7}"
+                    name="mobno" required>
+                <input type="text" id="nic" placeholder="NIC Number" name="nic"
+                    pattern="[1-7]{1}[0-9]{4}-[0-9]{7}-[0-9]{1}" title="A 13 digit number of format 12345-1234567-1"
+                    required>
+                <input type="text" id="address" placeholder="Address" name="address" required>
+                <input type="email" id="email" placeholder="Email" name="email" required>
+                <input type="password" id="password" placeholder="Password" name="password" pattern=".{8,}"
+                    title="Eight or more characters" required>
+                <input type="password" id="confpwd" placeholder="Confirm Password" name="confpwd" required>
+                <!-- <br> -->
+                <label for="dp">Choose profile picture: </label>
+                <input class="white" type="file" id="dp" accept="image/png, image/jpeg" name="myImage" required>
+                <!-- <br> -->
+                <button class="logregbtn" type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a class="click" href="../index.html" id="login">Log In</a></p>
+        </div>
+        <div class="about" id="about">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima minus dolore perspiciatis incidunt?
+                Veritatis aspernatur, et at consequuntur cumque dolorum assumenda animi maiores praesentium cupiditate
+                atque
+                quasi eum unde incidunt optio voluptatem minima ullam. Eaque eius veritatis earum porro. Quos est ipsa
+                minus
+                asperiores totam soluta voluptatum esse repellendus modi.</p>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

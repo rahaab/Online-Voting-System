@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karma', serif;
+    color: white;
+}
+
+header{
+    background: #000;
+    color: white;
+}
+.logreg{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    width: 9%;
+}
+
+ul{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    margin: 0px 50px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 36px;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    padding: 2%;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+}
+
+h2{
+    text-align: center;
+    padding: 3%;
+}
+
+body{
+    background-image: radial-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(box.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+input{
+    color: black;
+    width: 98% ;
+    padding: 1%;
+    margin: 3% 0%;
+    border-radius: 20px;
+}
+.roleselect{
+    color: black;
+    /* width: 88px; */
+    width: 59%;
+    border-radius: 20px;
+    margin: 3% 0%;
+}
+
+option{
+    color: black;
+}
+
+.white{
+    color: white;
+}
+.click{
+    color: rgb(184, 235, 255);
+    text-decoration: none;
+}
+
+.logregform{
+    /* background-color: gray; */
+    /* height: 300px; */
+    max-width: 300px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2%;
+    /* border-style: inset; */
+    /* margin: 0vh 39%; */
+    margin: 2% auto;
+}
+
+.logregbtn{
+    width: 100%;
+    padding: 1%;
+    margin: 3% 0%;
+    /* background: rgb(255, 123, 0); */
+    background: grey;
+    border-radius: 20px;
+    /* border-style: inset; */
+}
+
+.about{
+    margin-top: 30vh;
+    background: #000;
+    padding: 2%;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    border-style: inset none none none;
+}
+.about h3{
+    text-decoration: underline;
+}
+
+.rules h2{
+    text-decoration: underline;
+}
+
+.rules{
+        margin: 4% auto;
+        width: 80vw;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        padding: 3%;
+}
+
+.editbtn{
+    color: white;
+    width: 10%;
+    min-width: 64px;
+    padding: 1%;
+    /* background: rgb(255, 123, 0); */
+    background: grey;
+}
