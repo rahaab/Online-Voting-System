@@ -5,7 +5,7 @@ if(!isset($_SESSION['userdata'])){
 }
 
 $userdata = $_SESSION['userdata'];
-$candidatedata = $_SESSION['candidatedata']
+$candidatedata = $_SESSION['candidatedata'];
 ?>
 
 <!DOCTYPE html>
@@ -27,10 +27,9 @@ $candidatedata = $_SESSION['candidatedata']
         <nav>
             <img class="logo" src="logonew.png" alt="">
             <ul>
-                <!-- <li>logo</li> -->
                 <li><a href="#about">About Us</a></li>
-                <li><a href="rules.html" target="_blank">Rules</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="rules.php" target="_blank">Rules</a></li>
+                <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -65,9 +64,20 @@ $candidatedata = $_SESSION['candidatedata']
                             <div class="slots">
                                 <img class="candidatedp" src="../uploads/<?php echo $candidatedata[$i]['photo'] ?>" alt="">
                                 <b>Candidate Name:</b> <?php echo $candidatedata[$i]['firstname'] ?> <?php echo $candidatedata[$i]['lastname'] ?>
-                                <form action="#">
-                                    <input type="hidden" name="gvotes" value="">
+                                <form action="../api/vote.php" method="POST">
+                                    <input type="hidden" name="gvotes" value="<?php echo $candidatedata[$i]['vote_count'] ?>">
+                                    <input type="hidden" name="gid" value="<?php echo $candidatedata[$i]['cand_id'] ?>">
+                                    <?php
+                                    if ($_SESSION['userdata']['status']=="Not Voted"){?>
                                     <button type="submit" name="votebtn" value="Vote" id="votebtn" class="votebtn">Vote</button>
+                                    <?php
+                                    }
+                                    else{
+                                        ?>
+                                        <button disabled type="button" name="votebtn" value="Vote" id="votebtn" class="votedbtn">Voted</button>
+                                        <?php
+                                    }
+                                    ?>
                                 </form>
                             </div>
                             <hr>
@@ -79,10 +89,8 @@ $candidatedata = $_SESSION['candidatedata']
         </div>
         <div class="about" id="about">
             <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima minus dolore perspiciatis incidunt?
-            Veritatis aspernatur, et at consequuntur cumque dolorum assumenda animi maiores praesentium cupiditate atque
-            quasi eum unde incidunt optio voluptatem minima ullam. Eaque eius veritatis earum porro. Quos est ipsa minus
-            asperiores totam soluta voluptatum esse repellendus modi.</p>
+            <p>We are a small team comprised of four members. Our mission is to provide a voting system on an online platform. To achieve this, we built a free voting system that everyone can easily participate in if they are eligible for the criteria mentioned. We value reliability, precision and fast work. This allows us to work in a very agile way and implement new ideas quickly and easily. If you have any queries you can always contact us using the information mentioned below:</p>
+            <p>Contact no: 02136954032 Email: onlinevotingsystem@gmail.com facebook: @ovs/facebook Twitter: @ovs/twitter</p>
         </div>
     </main>
     <footer></footer>
