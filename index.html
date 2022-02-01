@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="routes/stylelogin.css">
     <title>Online Voting System - Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +17,14 @@
         <nav class="logreg">
             <img src="logonew.png" alt="">
             <ul>
-                <!-- <li><img src="logo.png" alt=""></li> -->
                 <li><a href="#about">About us</a></li>
-                <li><a href="routes/rules.html" target="_blank">Rules</a></li>
+                <li><a href="routes/rules.php" target="_blank">Rules</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <hr>
         <h1>Online Voting System</h1>
-        <!-- <hr> -->
         <div class="logregform">
             <h2>Login</h2>
             <form action="api/login.php" method="post">
@@ -36,13 +34,8 @@
                     <option value="candidate">Candidate</option>
                     <option value="admin">Admin</option>
                 </select>
-                <!-- <br><br> -->
-                <!-- <label for="email">Email:</label> -->
                 <input type="email" id="email" name="email" placeholder="Enter email" required>
-                <!-- <br><br> -->
-                <!-- <label for="password">Password:</label> -->
                 <input type="password" id="password" name="password" placeholder="Enter password" required>
-                <!-- <br><br> -->
                 <button class="logregbtn" type="submit">Log In</button>
             </form>
             <a class="click" href="">Forgot password?</a>
@@ -51,10 +44,8 @@
         </div>
         <div class="about" id="about">
             <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima minus dolore perspiciatis incidunt?
-            Veritatis aspernatur, et at consequuntur cumque dolorum assumenda animi maiores praesentium cupiditate atque
-            quasi eum unde incidunt optio voluptatem minima ullam. Eaque eius veritatis earum porro. Quos est ipsa minus
-            asperiores totam soluta voluptatum esse repellendus modi.</p>
+            <p>We are a small team comprised of four members. Our mission is to provide a voting system on an online platform. To achieve this, we built a free voting system that everyone can easily participate in if they are eligible for the criteria mentioned. We value reliability, precision and fast work. This allows us to work in a very agile way and implement new ideas quickly and easily. If you have any queries you can always contact us using the information mentioned below:</p>
+            <p>Contact no: 02136954032 Email: onlinevotingsystem@gmail.com facebook: @ovs/facebook Twitter: @ovs/twitter</p>
         </div>
     </main>
     <footer>
