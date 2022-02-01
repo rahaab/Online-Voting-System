@@ -25,11 +25,10 @@ $candidatedata = $_SESSION['candidatedata']
         <nav>
             <img class="logo" src="logonew.png" alt="">
             <ul>
-                <!-- <li>logo</li> -->
                 <li><a href="#about">About Us</a></li>
-                <li><a href="rules.html" target="_blank">Rules</a></li>
-                <li><a href="votes.php" target="_blank">votes</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="rules.php" target="_blank">Rules</a></li>
+                <li><a href="votesgraph.php" target="_blank">Votes</a></li>
+                <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -37,38 +36,31 @@ $candidatedata = $_SESSION['candidatedata']
         <hr>
         <h1>Admin Dashboard</h1>
         <div class="buttons">
-        <button class="adminbtn">Create Poll</button>
+        <a href="create_poll.html"><button class="adminbtn">Create Poll</button></a>
         <button class="adminbtn">Edit Rules</button>
         </div>
-        <!-- <div class="box">
-            <div class="profile">
-                <b>Name:</b> <?php echo $userdata['firstname'] ?> <?php echo $userdata['lastname'] ?>
-            </div> -->
-            <div class="candidates">
-            <h2>Candidates</h2>
-            <hr>
-            <?php
-                    if($_SESSION['candidatedata']){
-                        for ($i=0; $i<count($candidatedata); $i++){
-                            ?>
+        <div class="candidates">
+        <h2>Candidates</h2>
+        <hr>
+        <?php
+                if($_SESSION['candidatedata']){
+                    for ($i=0; $i<count($candidatedata); $i++){
+                        ?>
                             <div class="slots">
                                 <img class="candidatedp" src="../uploads/<?php echo $candidatedata[$i]['photo'] ?>" alt="">
                                 <b>Candidate Name:</b> <?php echo $candidatedata[$i]['firstname'] ?> <?php echo $candidatedata[$i]['lastname'] ?>
                             </div>
-                            <hr>
-                            <?php
-                        }
+                        <hr>
+                        <?php
                     }
-                ?>
-            </div>
-        <!-- </div> -->
+                }
+            ?>
+        </div>
         </div>
         <div class="about" id="about">
             <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima minus dolore perspiciatis incidunt?
-            Veritatis aspernatur, et at consequuntur cumque dolorum assumenda animi maiores praesentium cupiditate atque
-            quasi eum unde incidunt optio voluptatem minima ullam. Eaque eius veritatis earum porro. Quos est ipsa minus
-            asperiores totam soluta voluptatum esse repellendus modi.</p>
+            <p>We are a small team comprised of four members. Our mission is to provide a voting system on an online platform. To achieve this, we built a free voting system that everyone can easily participate in if they are eligible for the criteria mentioned. We value reliability, precision and fast work. This allows us to work in a very agile way and implement new ideas quickly and easily. If you have any queries you can always contact us using the information mentioned below:</p>
+            <p>Contact no: 02136954032 Email: onlinevotingsystem@gmail.com facebook: @ovs/facebook Twitter: @ovs/twitter</p>
         </div>
 
     </main>
