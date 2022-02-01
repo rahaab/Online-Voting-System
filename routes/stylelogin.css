@@ -9,6 +9,7 @@ header{
     background: #000;
     color: white;
 }
+
 .logreg{
     display: flex;
     padding: 1% 2%;
@@ -38,10 +39,13 @@ nav ul li a{
     text-decoration: none;
 }
 
+nav ul li a:hover{
+    color: rgb(87, 208, 255);
+}
+
 h1{
     text-align: center;
     padding: 2%;
-    /* background-color: rgba(0, 0, 0, 0.4); */
 }
 
 h2{
@@ -51,10 +55,10 @@ h2{
 
 body{
     background-image: radial-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(box.jpg);
-    /* background-repeat: no-repeat; */
     background-size: cover;
     background-attachment: fixed;
 }
+
 input{
     color: black;
     width: 98% ;
@@ -64,10 +68,13 @@ input{
 }
 .roleselect{
     color: black;
-    /* width: 88px; */
     width: 59%;
     border-radius: 20px;
     margin: 3% 0%;
+}
+
+.roleselect:hover{
+    cursor: pointer;
 }
 
 option{
@@ -77,31 +84,37 @@ option{
 .white{
     color: white;
 }
+
 .click{
-    color: rgb(184, 235, 255);
+    color: rgb(87, 208, 255);
     text-decoration: none;
 }
 
+.click:hover{
+    text-decoration: underline;
+}
+
 .logregform{
-    /* background-color: gray; */
-    /* height: 300px; */
     max-width: 300px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 2%;
-    /* border-style: inset; */
-    /* margin: 0vh 39%; */
     margin: 2% auto;
+    min-height: 294px;
 }
 
 .logregbtn{
     width: 100%;
     padding: 1%;
     margin: 3% 0%;
-    /* background: rgb(255, 123, 0); */
-    background: grey;
+    background: gray;
     border-radius: 20px;
-    /* border-style: inset; */
+}
+
+.logregbtn:hover{
+    background: black;
+    cursor: pointer;
+    border: 2px solid gray;
 }
 
 .about{
@@ -134,6 +147,17 @@ option{
     width: 10%;
     min-width: 64px;
     padding: 1%;
-    /* background: rgb(255, 123, 0); */
     background: grey;
+}
+
+#rules{
+    color: black;
+}
+
+.pollform{
+    max-width: 500px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2%;
+    margin: 2% auto;
 }
