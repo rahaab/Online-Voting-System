@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelogin.css">
+    <title>Online Voting System - Create Poll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="logreg">
+            <img class="logo" src="logonew.png" alt="">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="rules.html" target="_blank">Rules</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <h1>Create New Poll</h1>
+        <div class="pollform">
+            <form action="../api/poll.php" method="post">
+                Start Date:<input type="date" required name="startdate">
+                End Date:<input type="date" required name="enddate">
+                Age Criteria: <input type="number" required name="age">
+                Rules: <textarea name="rules" id="rules" cols="70" rows="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aspernatur accusamus maiores nihil modi! Quam ex optio, vel magnam, nostrum, iusto similique eaque modi facilis cupiditate architecto id delectus odit?
+                    1- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                        laborum excepturi, a tempora ratione non vel modi.
+                    2-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                        laborum excepturi, a tempora ratione non vel modi.
+                    3-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                        laborum excepturi, a tempora ratione non vel modi.
+                    4-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                        laborum excepturi, a tempora ratione non vel modi.
+                    5-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                        laborum excepturi, a tempora ratione non vel modi.
+                    6-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                        laborum excepturi, a tempora ratione non vel modi.
+                    7-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusantium quia perferendis
+                        laborum excepturi, a tempora ratione non vel modi.
+                    </textarea>
+                <button class="logregbtn" type="submit">Create</button>
+            </form>
+        </div>
+        <div class="about" id="about">
+            <h3>About Us</h3>
+            <p>We are a small team comprised of four members. Our mission is to provide a voting system on an online platform. To achieve this, we built a free voting system that everyone can easily participate in if they are eligible for the criteria mentioned. We value reliability, precision and fast work. This allows us to work in a very agile way and implement new ideas quickly and easily. If you have any queries you can always contact us using the information mentioned below:</p>
+            <p>Contact no: 02136954032 Email: onlinevotingsystem@gmail.com facebook: @ovs/facebook Twitter: @ovs/twitter</p>
+        </div>
+    </main>
+</body>
+</html>
