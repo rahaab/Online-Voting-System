@@ -9,20 +9,17 @@
     $age = $_POST['age'];
     $rules = $_POST['rules'];
 
-    $delete_candidates = mysqli_query($connect, "DELETE FROM candidate");
-    $update_voter_status = mysqli_query($connect, "UPDATE voter SET status='Not Voted'");
-    $clear_poll = mysqli_query($connect, "DELETE FROM poll");
-    $add_poll = mysqli_query($connect, "INSERT INTO poll (Start_date, End_date, Age, rules) VALUES ('$start_date','$end_date','$age', '$rules')");
+    $update_poll = mysqli_query($connect, "UPDATE poll SET start_date='$start_date', End_date='$end_date', Age='$age', rules='$rules'");
 
-    if($update_voter_status and $delete_candidates){
+    if($update_poll){
         echo '<script>
-            alert("Poll created successfully!");
+            alert("Poll updated successfully!");
             window.location = "../routes/admin.php";
         </script>';
     }
     else{
         echo '<script>
-            alert("Poll creation failed! Try Again.");
+            alert("Poll updation failed! Try Again.");
             window.location = "../routes/admin.php";
         </script>';
     }
