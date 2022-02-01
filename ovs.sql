@@ -68,11 +68,4 @@ Age int NOT NULL,
 rules varchar(2000) NOT NULL,
 constraint pk_s PRIMARY KEY (s_no));
 INSERT INTO poll VALUES
-('1','2022-01-12','2022-01-30','18','1)A user (voter) will be allowed to vote only once per poll. 
-2)A user( candidate) will also be allowed to vote only once per poll.
-3)If the vote status shows voted that means that particular user has voted once. 
-4)You are only allowed to vote only during the time of the poll, like only between the start and end date mentioned. 
-5)Voting status will update once only.
-6)An age criteria is set up by candidates that will allow them to register as one. If that candidate has an age greater then the age specified than he/ she can register. 
-7)This age criteria may vary for different polls conducted. You can set it by yourself  for different polls.
-8)No voting will be entertained after or before the poll scheduled dates.');
+('1','2022-01-12','2022-01-30','18','1)A user (voter) will be allowed to vote only once per poll. 2)A user( candidate) will also be allowed to vote only once per poll. 3)If the vote status shows voted that means that particular user has voted once. 4)You are only allowed to vote only during the time of the poll, like only between the start and end date mentioned. 5)Voting status will update once only. 6)An age criteria is set up by candidates that will allow them to register as one. If that candidate has an age greater then the age specified than he/ she can register. 7)This age criteria may vary for different polls conducted. You can set it by yourself  for different polls. 8)No voting will be entertained after or before the poll scheduled dates.');
