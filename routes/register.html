@@ -25,8 +25,6 @@
     <main>
         <hr>
         <h1>Online Voting System</h1>
-        <!-- <hr> -->
-
         <div class="logregform">
             <h2>Register</h2>
             <form action="../api/register.php" method="post" enctype="multipart/form-data">
@@ -35,35 +33,29 @@
                     <option value="voter">Voter</option>
                     <option value="candidate">Candidate</option>
                 </select> -->
-                <input type="text" id="fname" placeholder="First Name" name="fname" pattern="[A-Z]{1}[a-z]{1,}"
+                <input type="text" id="fname" placeholder="First Name" name="fname" pattern="[A-Z]{1}[a-z]{1,}" title="Your name must start with a capital letter and contain only letters"
                     required>
-                <input type="text" id="lname" placeholder="Last Name" name="lname" pattern="[A-Z]{1}[a-z]{1,}" required>
-                <input type="tel" id="mobno" placeholder="Mobile Number" pattern="03[0-6]{1}[0-9]{1}-[0-9]{7}"
+                <input type="text" id="lname" placeholder="Last Name" name="lname" pattern="[A-Z]{1}[a-z]{1,}" title="Your name must start with a capital letter and contain only letters" required>
+                <input type="tel" id="mobno" placeholder="Mobile Number" pattern="03[0-6]{1}[0-9]{1}[0-9]{7}" title="03XXXXXXXXX"
                     name="mobno" required>
                 <input type="text" id="nic" placeholder="NIC Number" name="nic"
                     pattern="[1-7]{1}[0-9]{4}-[0-9]{7}-[0-9]{1}" title="A 13 digit number of format 12345-1234567-1"
                     required>
                 <input type="text" id="address" placeholder="Address" name="address" required>
-                <input type="email" id="email" placeholder="Email" name="email" required>
+                <input type="email" id="email" placeholder="Email" name="email" title="abc@xyz.com" required>
                 <input type="password" id="password" placeholder="Password" name="password" pattern=".{8,}"
-                    title="Eight or more characters" required>
+                    title="Your password must be at least 8 characters long" required>
                 <input type="password" id="confpwd" placeholder="Confirm Password" name="confpwd" required>
-                <!-- <br> -->
                 <label for="dp">Choose profile picture: </label>
                 <input class="white" type="file" id="dp" accept="image/png, image/jpeg" name="myImage" required>
-                <!-- <br> -->
                 <button class="logregbtn" type="submit">Register</button>
             </form>
             <p>Already have an account? <a class="click" href="../index.html" id="login">Log In</a></p>
         </div>
         <div class="about" id="about">
             <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima minus dolore perspiciatis incidunt?
-                Veritatis aspernatur, et at consequuntur cumque dolorum assumenda animi maiores praesentium cupiditate
-                atque
-                quasi eum unde incidunt optio voluptatem minima ullam. Eaque eius veritatis earum porro. Quos est ipsa
-                minus
-                asperiores totam soluta voluptatum esse repellendus modi.</p>
+            <p>We are a small team comprised of four members. Our mission is to provide a voting system on an online platform. To achieve this, we built a free voting system that everyone can easily participate in if they are eligible for the criteria mentioned. We value reliability, precision and fast work. This allows us to work in a very agile way and implement new ideas quickly and easily. If you have any queries you can always contact us using the information mentioned below:</p>
+            <p>Contact no: 02136954032 Email: onlinevotingsystem@gmail.com facebook: @ovs/facebook Twitter: @ovs/twitter</p>
         </div>
     </main>
     <footer></footer>
