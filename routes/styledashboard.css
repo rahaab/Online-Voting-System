@@ -39,6 +39,10 @@ nav ul li a{
     text-decoration: none;
 }
 
+nav ul li a:hover{
+    color: rgb(87, 208, 255);
+}
+
 h1{
     text-align: center;
     padding: 2%;
@@ -46,7 +50,6 @@ h1{
 
 body{
     background-image: radial-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(box.jpg);
-    /* background-repeat: no-repeat; */
     background-size: cover;
     background-attachment: fixed;
 }
@@ -66,23 +69,13 @@ body{
 }
 
 .profile{
-    /* background-color: gray; */
-    /* height: 300px; */
-    /* min-width: 300px;
-    width: 30%; */
-    /* padding: 10px; */
-    /* background-color: rgba(0, 0, 0, 0.4); */
     background: black;
     padding: 2%;
     border-style: inset;
-    /* margin: 0vh 39%; */
-    /* margin: 2%; */
     font-size: 18px;
-    /* display: inline-block; */
 }
 
 .box{
-    /* background: gray; */
     display: grid;
     grid-template-columns: 30% 60%;
     justify-content: space-between;
@@ -91,20 +84,13 @@ body{
     
 }
 .candidates{
-    /* background-color: gray; */
-    /* height: 300px; */
-    /* min-width: 300px;
-    width: 70%; */
     background-color: rgba(0, 0, 0, 0.4);
-    /* background: black; */
+    max-height: 480px;
     padding: 2%;
     border-style: inset;
-    /* margin: 0vh 39%; */
-    /* margin: 2% auto; */
     font-size: 18px;
-    overflow-y: scroll;
+    overflow-y: auto;
     margin: 1%;
-    /* display: inline-block; */
 }
 
 .slots{
@@ -116,9 +102,7 @@ h2{
 }
 
 b{
-    /* color: gray; */
     color: #0addff;
-    /* color: rgb(184, 235, 255); */
 }
 
 .votebtn{
@@ -126,10 +110,37 @@ b{
     min-width: 64px;
     padding: 1%;
     margin: 3% 0%;
-    /* background: rgb(255, 123, 0); */
     background: grey;
-    /* border-radius: 20px; */
-    /* border-style: inset; */
+}
+
+.votebtn:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.votedbtn{
+    width: 10%;
+    min-width: 64px;
+    padding: 1%;
+    margin: 3% 0%;
+    background: transparent;
+    border-style: inset;
+}
+
+.adminbtn{
+    min-width: 64px;
+    width: 100px;
+    min-height: 48px;
+    padding: 1%;
+    margin: 3% 0%;
+    background: grey;
+}
+
+.adminbtn:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
 }
 
 .about{
@@ -143,7 +154,6 @@ b{
 }
 
 .buttons{
-    /* background: #000; */
     display: flex;
     padding: 1%;
     justify-content: space-between;
@@ -151,13 +161,9 @@ b{
     height: fit-content;
 }
 
-.adminbtn{
-    width: 10%;
-    min-width: 64px;
-    padding: 1%;
-    /* margin: 3% 0%; */
-    /* background: rgb(255, 123, 0); */
-    background: grey;
-    /* border-radius: 20px; */
-    /* border-style: inset; */
-}
+@media screen and (max-width: 680px) {
+    nav ul li{
+      float: none;
+      width: 100%;
+    }
+  }
