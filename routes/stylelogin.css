@@ -138,8 +138,13 @@ option{
         margin: 4% auto;
         width: 80vw;
         background-color: rgba(0, 0, 0, 0.4);
-        text-align: center;
         padding: 3%;
+        font-size: 20px;
+}
+
+.text{
+    overflow-x: auto;
+    font-size: 18px;
 }
 
 .editbtn{

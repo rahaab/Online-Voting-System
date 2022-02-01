@@ -36,8 +36,8 @@ $candidatedata = $_SESSION['candidatedata']
         <hr>
         <h1>Admin Dashboard</h1>
         <div class="buttons">
-        <a href="create_poll.html"><button class="adminbtn">Create Poll</button></a>
-        <button class="adminbtn">Edit Rules</button>
+            <a href="create_poll.html"><button class="adminbtn">Create Poll</button></a>
+            <a href="editpoll_page.php"><button class="adminbtn">Edit Poll</button></a>
         </div>
         <div class="candidates">
         <h2>Candidates</h2>

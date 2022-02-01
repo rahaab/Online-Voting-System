@@ -21,12 +21,11 @@ $rule = mysqli_fetch_array($rules);
 </head>
 
 <body>
-    <!-- <iframe src="editrules.html" style="width: 100vw; height: 100vh;"></iframe> -->
-    <!-- <div style="background-color: transparent; top: 0px; left: 0px; position: absolute; width: 100vw; height: 100vh; z-index:9999">
-    </div> -->
     <div class='rules'>
         <h2>Rules</h2>
-        <?php echo $rule['rules'] ?>
+        <div class="text">
+            <?php echo $rule['rules'] ?>
+        </div>
 
     </div>
 </body>
