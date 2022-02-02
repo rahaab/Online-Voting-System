@@ -24,6 +24,11 @@ $poll_details = mysqli_fetch_array($poll);
     <header>
         <nav class="logreg">
             <img src="logonew.png" alt="">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="rules.php" target="_blank">Rules</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -39,6 +44,11 @@ $poll_details = mysqli_fetch_array($poll);
                 <button class="logregbtn" type="submit">Save Changes</button>
             </form>
             <a href="admin.php"><button class="logregbtn">Don't Save</button></a>
+        </div>
+        <div class="about" id="about">
+            <h3>About Us</h3>
+            <p>We are a small team comprised of four members. Our mission is to provide a voting system on an online platform. To achieve this, we built a free voting system that everyone can easily participate in if they are eligible for the criteria mentioned. We value reliability, precision and fast work. This allows us to work in a very agile way and implement new ideas quickly and easily. If you have any queries you can always contact us using the information mentioned below:</p>
+            <p>Contact no: 02136954032 Email: onlinevotingsystem@gmail.com facebook: @ovs/facebook Twitter: @ovs/twitter</p>
         </div>
     </main>
     <footer></footer>
