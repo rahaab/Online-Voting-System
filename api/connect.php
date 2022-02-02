@@ -1,6 +1,6 @@
 <?php
 
-$connect = mysqli_connect("localhost", "root", "", "onlinevoting") or die("connection failed!");
+$connect = mysqli_connect("localhost", "root", "", "ovs") or die("connection failed!");
 
 // if ($connect) {
 // 	echo "Connected!";
